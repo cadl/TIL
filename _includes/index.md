@@ -1,61 +1,24 @@
+## 20141123-本福特定律
+
+**本福特定律**，也称为**本福德法则**，说明一堆从**实际生活**得出的数据中，以1为首位数字的数的出现机率约为总数的三成，接近期望值1/9的3倍。推广来说，越大的数，以它为首几位的数出现的机率就越低。它可用于检查各种数据是否有造假。
 
 
-[Solo](http://solo.chibi.io) is a Jekyll theme that supports **single-page websites** only, but supports them well. Yes, it's responsive.
+### 不完整的解释
+> 一组平均增长的数据开始时，增长得较慢，由最初的数字a增长到另一个数字a+1起首的数的时间，必然比a+1起首的数增长到a+2，需要更多时间，所以出现率就更高了。
+从数数目来说，顺序从1开始数，1,2,3,...,9，从这点终结的话，所有数起首的机会似乎相同，但9之后的两位数10至19，以1起首的数又大大抛离了其他数了。而下一堆9起首的数出现之前，必然会经过一堆以2,3,4,...,8起首的数。若果这样数法有个终结点，以1起首的数的出现率一般都比9大。
+这个定律的严格证明，可以参见Hill, T. P. "A Statistical Derivation of the Significant-Digit Law." Stat. Sci. 10, 354-363, 1996.。
 
-<iframe src="http://ghbtns.com/github-btn.html?user=chibicode&amp;repo=solo&amp;type=watch&amp;count=true&amp;size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe><br/>
 
-Looking for a more standard Jekyll theme? Try out [Shiori](http://github.com/ellekasai/shiori) theme, which has Bootstrap integration.
+### 应用
+> 1972年，Hal Varian提出这个定律来用作检查支持某些公共计划的经济数据有否欺瞒之处。1992年，Mark J. Nigrini便在其博士论文"The Detection of Income Tax Evasion Through an Analysis of Digital Frequencies."（Ph.D. thesis. Cincinnati, OH: University of Cincinnati, 1992.）提出以它检查是否有伪帐。
+推而广之，它能用于在会计、金融甚至选举中出现的数据。例如，它被用于说明2009年伊朗总统大选中内贾德的造假。
+若所用的数据有指定数值范围；或不是以机率分布出现的数据，如正态分布的数据；这个定律则不准确。
 
-## Solo is useful if...
 
-* You want to create an "about me" page from a single markdown file and host it under a custom domain name.
-* You want to create a single-page website that's mostly text, like [Know Your Company](https://knowyourcompany.com/).
-* You want to share a single markdown file and tried GitHub Gist ([example](https://gist.github.com/dypsilon/5819504)), but would like something nicer-looking.
-* You want something like GitHub's [automatic page generator](http://pages.github.com/) for a non-code repository.
+来自 [知乎/为什么在会计报表中出现 9次数过多会被怀疑为造假?](http://www.zhihu.com/question/26688528)
 
-This page itself is built with Solo. It's generated from [this markdown file](https://github.com/chibicode/solo/blob/gh-pages/_includes/index.md).
 
-## Usage
+相关链接:
 
-First, [install Jekyll](http://jekyllrb.com/docs/installation/). Then download Solo from its [GitHub Repository](https://github.com/chibicode/solo). Start Jekyll and you should see this page up and running.
-
-**The main file you'll be editing is `_includes/index.md`**. This becomes the content for the main `index.html`.
-
-### Other Files
-
-* Edit `_config.yml` to change the site title.
-* Edit `_includes/head.html` to add custom code to `<head>`.
-* Edit `_includes/scripts.html` to add custom code before `</body>`.
-* Edit `CNAME` to host on a custom domain.
-* Edit `README.md` before pushing your code.
-
-### Don't use `<h1>` tags
-
-Wthin `index.md`, do not use `<h1>` tags - `<h1>` is reserved for the site title.
-
-### Supported Tags
-
-Solo supports lists, `<hr>`s, `<table>`s,
-
-> blockquotes, and...
-
-~~~html
-<pre>code blocks with syntax highlighting.</pre>
-~~~
-
-### Keep Solo up to date
-
-Instead of downloading, you can [fork Solo](https://github.com/chibicode/solo/fork) and use the "upstream" strategy described on [this page](https://help.github.com/articles/fork-a-repo) to keep Solo up to date.
-
-## Author
-
-Shu Uesugi ([Twitter](http://twitter.com/chibicode)/[GitHub](http://github.com/chibicode)/[G+](https://plus.google.com/110325199858284431541?rel=author)).
-
-![Shu Uesugi](http://www.gravatar.com/avatar/b868d84bbe2ed30ec45c9253e1c1cefe.jpg?s=200)
-
-### License
-
-[MIT License](http://chibicode.mit-license.org/)
-
-<div class="github-fork-ribbon-wrapper right fixed" style="width: 150px;height: 150px;position: fixed;overflow: hidden;top: 0;z-index: 9999;pointer-events: none;right: 0;"><div class="github-fork-ribbon" style="position: absolute;padding: 2px 0;background-color: #333;background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15));-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);z-index: 9999;pointer-events: auto;top: 42px;right: -43px;-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);-ms-transform: rotate(45deg);-o-transform: rotate(45deg);transform: rotate(45deg);"><a href="https://github.com/chibicode/solo" style="font: 700 13px &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif;color: #fff;text-decoration: none;text-shadow: 0 -1px rgba(0, 0, 0, 0.5);text-align: center;width: 200px;line-height: 20px;display: inline-block;padding: 2px 0;border-width: 1px 0;border-style: dotted;border-color: rgba(255, 255, 255, 0.7);">Fork me on GitHub</a></div></div>
+1. [wikipedia本福特定律](zh.wikipedia.org/wiki/本福特定律)
+2. [神秘的本福特定律](http://www.guokr.com/article/520/)
